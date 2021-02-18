@@ -1,0 +1,467 @@
+/* Variables CSS */
+:root{
+    --primary: rgb(85,195,249);
+    --secondary: rgb(183, 187, 190);
+    --third: rgb(2, 32, 32);
+    --fourth: rgb(47, 94, 118);
+    --dark: black;
+    --light: white;
+    /* --primary: rgb(19, 50, 65);
+    --secondary: rgb(28, 31, 33);
+    --third: rgb(5, 87, 87);
+    --fourth: rgb(33, 54, 65);
+    --dark: rgb(36, 29, 92);
+    --light: rgb(0, 0, 0); */
+ }
+ 
+ body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Copperplate, tahoma ;
+    background-image: url(../assets/fondo-background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+ }
+ h1, h3{
+    margin: 0;
+ }
+ 
+ *, *::before, *::after {
+    box-sizing: border-box;
+ }
+ /* Estilos de navbar */
+  .navBar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 50px;
+     text-shadow: 2px 2px 5px var(--light);
+     background-color: var(--light);
+     border-bottom: 2px solid var(--dark);
+     position: fixed;
+     top: 0;
+     width: 100%;
+  }
+  .checkBoxTheme{
+     display: flex;
+     flex-direction: column-reverse;
+     align-items: center;
+     margin-left: 15px;
+     font-size: 10px;
+  }
+  .checkBoxTheme > label{
+    text-shadow: 2px 2px 5px var(--light);
+    color: var(--third);
+  }
+  .fakeNavbar{
+     width: 100%;
+     height: 126px;
+  }
+  .bi-bi-graph-up{
+     padding-top: 15px;
+     padding-bottom: 15px;
+     color: var(--dark);
+     transition: 400ms;
+  }
+  .bi-bi-graph-up:hover{
+    color:var(--primary) ;
+  }
+  .navBarLinks {
+     list-style: none;
+     display: flex;
+  }
+  .navBarLinks > li{ 
+    font-size: 20px ;
+ }
+ .navBarLinks > li > a{
+    margin: 10px;
+    transition: 350ms;
+    color: var(--third) ;
+    text-decoration: none;
+ }
+ .navBarLinks > li > a:hover{
+    color: var(--primary);
+ }
+ .banner {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    padding-bottom: 30px;
+    text-transform: uppercase;
+ }
+ .banner > h2 {
+    font-size: 14px;
+    text-decoration: underline 3px var(--primary);
+ }
+ .cardSection{
+    padding-bottom: 40px;
+ }
+ .cardImgCenter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+ .portfolioCardImage {
+    width: 200px ;
+    height: 200px ;
+    font: Verdana;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--third);
+    border-radius: 8px;
+    padding: 1px;
+    transition: 400ms;
+ }
+ .portfolioCardsItemBody > button {
+    background-color: var(--primary);
+    color: var(--dark);
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: 200ms ease;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid var(--dark);
+    border-radius: 25%;
+ }
+ button:focus {outline:0;}
+ .portfolioCardsItemBody > button:hover {
+    background-color: transparent;
+    border: 3px solid var(--dark);
+    color: var(--third);
+ }
+ h1{
+    text-align: center;
+    padding-top: 40px;
+ }
+ h4{
+    text-shadow: 2px 2px 5px var(--light);
+    font-size: 25px;
+ }
+ .servers{
+    text-align: center;
+    padding-bottom: 25px;
+ }
+ .portfolioCardImage:hover {
+    color: var(--primary);
+ }
+ .workExp{
+    padding-bottom: 25px;
+ }
+ .tableExp {
+    border-style: solid;
+ }
+ .tableExp > tr > th{
+    background-color: var(--primary);
+ }
+ .contact{
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+    align-items: center;
+ }
+ .iconContact{
+    text-align:center;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+ }
+ .iconContact > a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark);
+ }
+ .iconContact > a > p{
+    margin-left: 20px;
+    text-shadow: 2px 2px 12px var(--dark);
+    transition: 300ms;
+ }
+ .iconContact >a > p:hover{
+    color: var(--primary);
+ }
+ .titleContact{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: overline var(--primary);
+ }
+ 
+ main{
+    background-color: rgba(var(--secondary), .7);
+    padding: 0 20px;
+ }
+ /* TABLE */
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    border-color: var(--dark);
+ }
+ table > tbody > tr > td{
+    border: 2px solid var(--dark);
+    text-align: center;  
+ }
+ .sectionTable{
+    background-color: rgba(var(--dark), .25);
+    width: 100%;
+    padding-bottom: 45px;
+ }
+ /* FOOTER */
+ 
+ .footer{
+    justify-content: space-between;
+    display: flex;
+    margin: 0px;
+    background-color: var(--secondary);
+    color: var(--dark);
+    flex-wrap: wrap;
+    padding: 40px 20px;
+ }
+ .footer1{
+    justify-content: space-between;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    background-color: var(--secondary);
+    color: var(--dark);
+    flex-wrap: wrap;
+    padding: 40px 20px;
+ }
+ .imgFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    transition: 400ms;
+   }
+   .imgFooter > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 400ms;
+   }
+   .imgFooter > img:hover{
+    color: var(--primary);
+   }
+   .footerDescript{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    flex: 1;
+   }
+    .footerHobbies{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       flex: 1;
+    }
+ .footer__hobbies__icons{
+    display: flex;
+ }
+ .footer__hobbies__icons > span{
+    margin: 0 10px;
+ }
+ .footerNetWorks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+ }
+ .footerNetworksItem{
+    display: flex;
+ }
+ .footerNetworksItem > a {
+    margin: 0 10px;
+    color: var(--dark);
+    transition: color 450ms ease;
+ 
+ }
+ .footerNetworksItem > a:hover {
+    color: var(--primary) ;
+    cursor: pointer;
+ }
+ .span > svg > p{
+    justify-content:center;
+    text-align:center;
+    align-items: center;
+ }
+ .rrssFooter > div > a{
+   display: flex;
+ }
+ 
+ /* Copyright */
+ .copyright{
+ 
+    background-color: rgba(var(--dark), .7);
+    text-align: center;
+    color: var(--primary);
+ }
+ .copyright > p {
+    margin: 0 20px;
+    padding: 10px;
+    border-top: 1px solid var(--primary);
+    font-size: 12px;
+ }
+ .copyright1{
+    background-color: rgba(var(--dark), .7);
+    text-align: center;
+    color: var(--primary);
+    width: 100%;
+ }
+ .copyright1 > p {
+    margin: 0 20px;
+    padding: 10px;
+    border-top: 1px solid var(--primary) ;
+    font-size: 12px;
+ }
+ 
+ /* Counter Page */
+ 
+ .counterTitle{
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    padding-top: 20px;
+    width: 100%;
+ }
+ .counterTitle > h2{
+    font-size: 20px;
+ }
+ .inputBoxes{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ }
+ .firstBox{
+    flex: 4;
+ }
+ .secondBox{
+    flex: 4;
+ }
+ .actions{
+    padding-bottom: 35px;
+    align-items: center;
+ }
+ .clearAll {
+    background-color: var(--primary);
+    color: var(--dark);
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: 200ms ease;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid var(--dark);
+    flex: 3;
+ }
+ .deleteSection{
+    padding-bottom: 35px;
+    border-bottom: 4px solid var(--primary);
+ }
+ button:focus {outline:0;}
+ .clearAll:hover {
+    background-color: transparent;
+    border: 3px solid var(--fourth);
+    color: var(--primary);
+ }
+ .eject {
+    background-color: var(--primary);
+    color: var(--dark);
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: 200ms ease;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid var(--fourth);
+ }
+ button:focus {outline:0;}
+ .eject:hover {
+    background-color: transparent;
+    border: 3px solid var(--fourth);
+    color: var(--secondary);
+ }
+ .resultadoFinal{
+    font-size: 45px;
+ }
+ /* Buttons Counter */
+ .boxCounter{
+    padding-top: 20px;
+ }
+ 
+ .btns > button{
+    margin: 20px;
+    background-color: var(--primary);
+    color: var(--fourth);
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: 200ms ease;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid var(--dark);
+    font-family: verdana;
+ }
+ button:focus {outline:0;}
+ .btns > button:hover {
+    background-color: transparent;
+    border: 3px solid var(--dark);
+    color: var(--secondary);
+ }
+ .h1Result{
+    padding-bottom: 20px;
+    font-size: 50px;
+ 
+ }
+ .divResult{
+    padding-bottom: 20px;
+ }
+ /* Modal */
+ .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(var(--dark), .7);
+  }
+  
+  /* Modal Content */
+  .modalContent {
+    background-color: var(--primary);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid var(--fourth);
+    width: 50%;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* The Close Button */
+  .close {
+    color: var(--secondary);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 200ms ease;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--fourth);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
