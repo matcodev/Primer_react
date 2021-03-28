@@ -444,7 +444,7 @@
     background-color: var(--primary);
     margin: auto;
     padding: 20px;
-    border: 1px solid var(--fourth);
+    border: 3px solid var(--fourth);
     width: 50%;
     color: rgb(0, 0, 0);
   }
@@ -472,10 +472,9 @@
   .modal{
      width: 100%;
      height: 100%;
-     position: absolute;
-     top: 0;
+     position: fixed;
      background-color: rgba(0, 0, 0, 0.7);
-     z-index: 10;
      display: flex;
-     opacity: 1;
-  }
+     overflow: auto; 
+     z-index: 1;
+ }
